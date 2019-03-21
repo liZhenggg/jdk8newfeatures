@@ -8,7 +8,7 @@ public interface Vehicle {
         System.out.println("我是一辆车！");
     }
 
-    //静态方法
+    // 接口可以声明（并且可以提供实现）静态方法
     static void blowHorn() {
         System.out.println("按喇叭！");
     }

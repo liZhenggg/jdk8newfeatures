@@ -1,7 +1,7 @@
 package defaultMethod;
 
 /**
- * 类实现了多个接口，并且这些接口有相同的默认方法
+ * 类实现了多个接口，并且这些接口有相同的默认方法print()
  */
 public class Car implements Vehicle, FourWheeler {
 
@@ -13,5 +13,8 @@ public class Car implements Vehicle, FourWheeler {
     // 解决方法二：使用super调用指定接口的默认方法
     public void print() {
         Vehicle.super.print();
+        FourWheeler.super.print();
+        Vehicle.blowHorn();
+        System.out.println("我是一辆汽车！");
     }
 }
